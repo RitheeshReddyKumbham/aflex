@@ -250,7 +250,7 @@ function App() {
                       </button>
                       <a
                         href={`${API_URL}/${rec.id}`}
-                        download={rec.filename}
+                        onClick={downloadVideo}
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded text-xs font-medium transition-colors text-center"
                       >
                         📥 Download
