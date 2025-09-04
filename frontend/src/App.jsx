@@ -230,7 +230,7 @@ function App() {
                   <div key={rec.id} className="bg-gray-50 rounded-lg p-4 hover:shadow-md transition-shadow">
                     <div className="bg-black rounded mb-3 relative overflow-hidden" style={{ width: '300px', height: '200px' }}>
                       <video
-                        src={`http://localhost:3000/api/recordings/${rec.id}`}
+                        src={`${API_URL}/${rec.id}`}
                         className="object-cover cursor-pointer w-full h-full"
                         onClick={() => setExpandedVideo(rec.id)}
                         poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23374151'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' fill='%23fff' font-size='30'%3E▶%3C/text%3E%3C/svg%3E"
@@ -249,7 +249,7 @@ function App() {
                         ▶️ Play
                       </button>
                       <a
-                        href={`http://localhost:3000/api/recordings/${rec.id}`}
+                        href={`${API_URL}/${rec.id}`}
                         download={rec.filename}
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white px-2 py-2 rounded text-xs font-medium transition-colors text-center"
                       >
@@ -278,7 +278,7 @@ function App() {
         >
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <video
-              src={`http://localhost:3000/api/recordings/${expandedVideo}`}
+              src={`${API_URL}/${expandedVideo}`}
               controls
               autoPlay
               className="rounded-lg"
