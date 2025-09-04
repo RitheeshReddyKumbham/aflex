@@ -1,2 +1,27 @@
-/frontend/
+# Dependencies
 node_modules/
+*/node_modules/
+
+# Database files
+*.db
+database.db
+
+# Uploaded files
+uploads/
+*/uploads/
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
