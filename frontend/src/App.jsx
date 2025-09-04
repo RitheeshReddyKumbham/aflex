@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/recordings";
+const API_URL = "https://aflex-3.onrender.com/api/recordings";
 const MAX_RECORDING_TIME = 180;
 
 function App() {
